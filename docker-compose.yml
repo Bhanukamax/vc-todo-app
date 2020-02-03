@@ -1,0 +1,31 @@
+version: "3"
+
+services:
+
+  backend:
+    build: ./api
+    volumes:
+      - ./api:/usr/src/api
+    ports:
+      - 6002:6002
+    depends_on:
+      - database
+
+  database:
+    image: mongo:4.0.15-xenial
+    ports:
+      - 27018:27017
+
+
+  frontend:
+    build: ./app
+    volumes:
+      - ./app:/usr/src/app
+    ports:
+      - 3000:3000
+    depends_on:
+      - backend
+
+#networks:
+  #default:
+    ## Use a custom driver
