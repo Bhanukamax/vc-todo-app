@@ -1,6 +1,6 @@
 # Todo App
 
-(Note: this app is developed using Node version 12)
+(Note: this app was developed using Node version 12)
 
 ## How to run the app (with Docker)
 
