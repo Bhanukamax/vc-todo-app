@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button/> renders correctly wihtout children 1`] = `<styled.button />`;
+
+exports[`<Button/> renders the button correctly with children 1`] = `
+<styled.button>
+  <p>
+    test
+  </p>
+</styled.button>
+`;

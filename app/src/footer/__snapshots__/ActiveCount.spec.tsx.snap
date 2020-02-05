@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ActiveCount/> reders correctly with props 1`] = `
+<styled.p>
+  5
+   active items
+</styled.p>
+`;
+
+exports[`<ActiveCount/> renders correctly 1`] = `
+<styled.p>
+   active items
+</styled.p>
+`;
