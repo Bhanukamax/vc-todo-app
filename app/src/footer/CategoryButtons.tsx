@@ -11,7 +11,7 @@ export const CategoryButtons: React.FC = () => (
   </Container>
 );
 
-const NavLink = (props: any) => (
+export const NavLink = (props: any) => (
   <Link
     {...props}
     getProps={({ isCurrent }) => {
@@ -29,7 +29,7 @@ const Container = styled.div`
   display: flex;
 `;
 
-const StyledLink = styled(NavLink)`
+export const StyledLink = styled(NavLink)`
   border: 0;
   padding: 10px 20px;
   margin: 0 10px;

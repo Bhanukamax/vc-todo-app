@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CategoryButtons/> renders correctly 1`] = `
+<styled.div>
+  <p>
+    View: 
+  </p>
+  <Styled(NavLink)
+    to="/"
+  >
+    All
+  </Styled(NavLink)>
+  <Styled(NavLink)
+    to="/active"
+  >
+    Active
+  </Styled(NavLink)>
+  <Styled(NavLink)
+    to="/completed"
+  >
+    Completed
+  </Styled(NavLink)>
+</styled.div>
+`;
