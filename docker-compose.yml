@@ -16,15 +16,31 @@ services:
     ports:
       - 27018:27017
 
-
-  frontend:
+  web:
     build: ./app
-    #volumes:
-      #- ./app:/usr/src/app
     ports:
-      - 3000:3000
+      - 80:80
     depends_on:
       - backend
+
+  #frontend:
+    #build: ./app
+    ##volumes:
+      ##- ./app:/usr/src/app
+    #ports:
+      #- 80:3000
+    #depends_on:
+      #- backend
+
+  #react_app:
+    #build: ./app
+
+  #website:
+    #image: php:apache
+    #volumes:
+      #- ./front:/var/www/html
+    #ports:
+      #- 80:80
 
 #networks:
   #default:
